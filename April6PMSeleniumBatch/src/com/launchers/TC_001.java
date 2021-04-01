@@ -10,7 +10,27 @@ public class TC_001 extends BaseTest
 		openBrowser("chromebrowser");
 		
 		navigateUrl("amazonurl");
-
+		
+		windowMaximize();
+		
+		String title = getwindowTitle();
+		System.out.println(title);
+		
+		String url = getApplicationUrl();
+		System.out.println(url);
+		
+		delCookies();
+				
+		windowBack();
+		
+		Thread.sleep(5000);
+		
+		windowForword();
+		
+		Thread.sleep(5000);
+		
+		windowRefresh();
+		
+		closeBrowser();	
 	}
-
 }

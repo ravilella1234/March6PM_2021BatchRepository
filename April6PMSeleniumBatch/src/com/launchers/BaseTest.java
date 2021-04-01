@@ -1,7 +1,6 @@
 package com.launchers;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -52,7 +51,52 @@ public class BaseTest
 	
 	public static void navigateUrl(String url)
 	{
-		driver.get(childProp.getProperty(url));
+		//driver.get(childProp.getProperty(url));
+		 driver.navigate().to(childProp.getProperty(url));
+	}
+	
+	public static void windowMaximize() 
+	{
+		driver.manage().window().maximize();
+	}
+	
+	public static String getwindowTitle() 
+	{
+		//String title = driver.getTitle();
+		//return title;
+		
+		return driver.getTitle();
+	}
+	
+	public static String getApplicationUrl() 
+	{
+		String url = driver.getCurrentUrl();
+		return url;
+	}
+	
+	public static void delCookies() 
+	{
+		driver.manage().deleteAllCookies();
+	}
+	
+	public static void windowBack()
+	{
+		driver.navigate().back();
+	}
+	
+	public static void windowForword()
+	{
+		driver.navigate().forward();
+	}
+	
+	public static void windowRefresh()
+	{
+		driver.navigate().refresh();
+	}
+	
+	public static void closeBrowser()
+	{
+		driver.quit();
 	}
 
 }
