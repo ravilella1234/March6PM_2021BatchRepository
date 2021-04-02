@@ -3,12 +3,13 @@ package com.launchers;
 public class TC_002 extends BaseTest
 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws Exception 
 	{
+		init();
 		
-		openBrowser("firefox");
+		openBrowser("chromebrowser");
 		
-		navigateUrl("https://www.bestbuy.com");
+		navigateUrl("iciciurl");
 	}
 
 }
