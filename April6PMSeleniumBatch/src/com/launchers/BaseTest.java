@@ -2,6 +2,7 @@ package com.launchers;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -68,12 +69,14 @@ public class BaseTest
 			option.setProfile(profile);
 			driver = new FirefoxDriver(option);
 		}
+		
 	}
 	
 	public static void navigateUrl(String url)
 	{
 		//driver.get(childProp.getProperty(url));
 		 driver.navigate().to(childProp.getProperty(url));
+		 driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	}
 	
 	public static void windowMaximize() 
@@ -144,8 +147,6 @@ public class BaseTest
 		
 		if(locatorKey.endsWith("_id")) {
 			element = driver.findElement(By.id(orProp.getProperty(locatorKey)));
-		}else if(locatorKey.endsWith("_name")) {
-			element = driver.findElement(By.name(orProp.getProperty(locatorKey)));
 		}else if(locatorKey.endsWith("_name")) {
 			element = driver.findElement(By.name(orProp.getProperty(locatorKey)));
 		}else if(locatorKey.endsWith("_classname")) {
