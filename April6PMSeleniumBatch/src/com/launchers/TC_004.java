@@ -26,6 +26,8 @@ public class TC_004 extends BaseTest
 		 * i=0;i<links.size();i++) { if(!links.get(i).getText().isEmpty()) {
 		 * System.out.println(links.get(i).getText()); } }
 		 */
+		
+		
 	}
 
 }
