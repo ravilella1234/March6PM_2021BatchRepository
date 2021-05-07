@@ -66,7 +66,7 @@ public class BaseTest
 	
 	public static void openBrowser(String browser)
 	{
-		if(p.getProperty(browser).equals("chrome")) 
+		if(browser.equals("chrome")) 
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\April Drivers\\chromedriver.exe");
 			
@@ -75,7 +75,7 @@ public class BaseTest
 			option.addArguments("--disable-notifications");
 			driver = new ChromeDriver(option);
 		}
-		else if(p.getProperty(browser).equals("firefox")) 
+		else if(browser.equals("firefox")) 
 		{
 			System.setProperty("webdriver.gecko.driver", "C:/Users/DELL/Desktop/April Drivers/geckodriver.exe");
 			ProfilesIni p = new ProfilesIni();

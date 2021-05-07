@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="149" started-at="2021-05-07T13:17:35Z" finished-at="2021-05-07T13:17:35Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="149" started-at="2021-05-07T13:17:35Z" finished-at="2021-05-07T13:17:35Z">
+      <class name="parallelsuites.DemoTest">
+        <test-method status="PASS" signature="test2()[pri:0, instance:parallelsuites.DemoTest@17c386de]" name="test2" duration-ms="49" started-at="2021-05-07T13:17:35Z" finished-at="2021-05-07T13:17:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:parallelsuites.DemoTest@17c386de]" name="test3" duration-ms="47" started-at="2021-05-07T13:17:35Z" finished-at="2021-05-07T13:17:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:parallelsuites.DemoTest@17c386de]" name="test1" duration-ms="48" started-at="2021-05-07T13:17:35Z" finished-at="2021-05-07T13:17:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- parallelsuites.DemoTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
