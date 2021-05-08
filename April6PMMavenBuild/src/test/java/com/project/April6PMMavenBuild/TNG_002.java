@@ -11,7 +11,7 @@ import org.testng.annotations.AfterMethod;
 public class TNG_002 extends BaseTest
 {
 	
-  @BeforeMethod
+  @BeforeMethod(groups = {"regression","sanity"})
   @Parameters("browser")
   public void startProcess(String bType) throws Exception 
   {
@@ -26,7 +26,7 @@ public class TNG_002 extends BaseTest
 		test.log(LogStatus.PASS, "Opened the Url : " + childProp.getProperty("amazonurl"));
   }
   
-  @Test
+  @Test(groups = {"regression","sanity"})
   public void amazon() 
   {
 	    windowMaximize();
@@ -42,7 +42,7 @@ public class TNG_002 extends BaseTest
 		test.log(LogStatus.PASS, "Clicked on amazon search button By using locatoer :- "+ orProp.getProperty("amazonsearchbutton_xpath"));
   }
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression","sanity"})
   public void endProcess()
   {
 	  driver.quit();
