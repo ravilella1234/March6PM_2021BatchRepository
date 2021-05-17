@@ -19,6 +19,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -222,6 +224,18 @@ public class BaseTest
 		
 		test.log(LogStatus.INFO, "Screenshot --->" +test.addScreenCapture(projectPath+"\\failurescreenshots\\"+dateFormat));
 		
+	}
+	
+	public void waitForElement(WebElement locator, int timeInSeconds, String type) 
+	{
+		WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
+		
+		if(type.equals("visibleOfElement")){
+			wait.until(ExpectedConditions.visibilityOf(locator));
+		}
+		else if(type.equals("elementToClick")) {
+			wait.until(ExpectedConditions.elementToBeClickable(locator));
+		}
 	}
 
 }
