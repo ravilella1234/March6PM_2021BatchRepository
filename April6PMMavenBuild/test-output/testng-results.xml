@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25501" started-at="2021-05-17T13:22:01Z" finished-at="2021-05-17T13:22:27Z">
+  <suite name="Default suite" duration-ms="20390" started-at="2021-05-19T12:45:38Z" finished-at="2021-05-19T12:45:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25501" started-at="2021-05-17T13:22:01Z" finished-at="2021-05-17T13:22:27Z">
-      <class name="pageObjectModel.TNG001">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:pageObjectModel.TNG001@6156496]" name="beforeMethod" is-config="true" duration-ms="16032" started-at="2021-05-17T13:22:02Z" finished-at="2021-05-17T13:22:18Z">
+    <test name="Default test" duration-ms="20390" started-at="2021-05-19T12:45:38Z" finished-at="2021-05-19T12:45:59Z">
+      <class name="switches.FileUpload">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:switches.FileUpload@436a4e4b]" name="beforeMethod" is-config="true" duration-ms="16871" started-at="2021-05-19T12:45:38Z" finished-at="2021-05-19T12:45:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="custRegistration()[pri:0, instance:pageObjectModel.TNG001@6156496]" name="custRegistration" duration-ms="9383" started-at="2021-05-17T13:22:18Z" finished-at="2021-05-17T13:22:27Z">
+        <test-method status="PASS" signature="fileupload()[pri:0, instance:switches.FileUpload@436a4e4b]" name="fileupload" duration-ms="3443" started-at="2021-05-19T12:45:55Z" finished-at="2021-05-19T12:45:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- custRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:pageObjectModel.TNG001@6156496]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-05-17T13:22:27Z" finished-at="2021-05-17T13:22:27Z">
+        </test-method> <!-- fileupload -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:switches.FileUpload@436a4e4b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-05-19T12:45:59Z" finished-at="2021-05-19T12:45:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- pageObjectModel.TNG001 -->
+      </class> <!-- switches.FileUpload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
