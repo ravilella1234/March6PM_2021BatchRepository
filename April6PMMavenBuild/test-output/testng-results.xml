@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17015" started-at="2021-05-20T12:25:00Z" finished-at="2021-05-20T12:25:17Z">
+  <suite name="Suite" duration-ms="152966" started-at="2021-05-25T12:21:16Z" finished-at="2021-05-25T12:23:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17015" started-at="2021-05-20T12:25:00Z" finished-at="2021-05-20T12:25:17Z">
-      <class name="actions.MouseOperations">
-        <test-method status="PASS" signature="setup()[pri:0, instance:actions.MouseOperations@436a4e4b]" name="setup" is-config="true" duration-ms="3816" started-at="2021-05-20T12:25:00Z" finished-at="2021-05-20T12:25:04Z">
+    <test name="Test" duration-ms="152966" started-at="2021-05-25T12:21:16Z" finished-at="2021-05-25T12:23:49Z">
+      <class name="grid.GridDemo">
+        <test-method status="PASS" signature="test2()[pri:0, instance:grid.GridDemo@258e2e41]" name="test2" duration-ms="97095" started-at="2021-05-25T12:21:16Z" finished-at="2021-05-25T12:22:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="autoSuggestion()[pri:7, instance:actions.MouseOperations@436a4e4b]" name="autoSuggestion" duration-ms="13123" started-at="2021-05-20T12:25:04Z" finished-at="2021-05-20T12:25:17Z">
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:grid.GridDemo@258e2e41]" name="test3" duration-ms="89846" started-at="2021-05-25T12:21:16Z" finished-at="2021-05-25T12:22:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- autoSuggestion -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:actions.MouseOperations@436a4e4b]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-05-20T12:25:17Z" finished-at="2021-05-20T12:25:17Z">
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:grid.GridDemo@258e2e41]" name="test4" duration-ms="93033" started-at="2021-05-25T12:21:16Z" finished-at="2021-05-25T12:22:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- actions.MouseOperations -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test5()[pri:0, instance:grid.GridDemo@258e2e41]" name="test5" duration-ms="99070" started-at="2021-05-25T12:21:16Z" finished-at="2021-05-25T12:22:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:grid.GridDemo@258e2e41]" name="test1" duration-ms="95425" started-at="2021-05-25T12:21:16Z" finished-at="2021-05-25T12:22:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test6()[pri:0, instance:grid.GridDemo@258e2e41]" name="test6" duration-ms="62974" started-at="2021-05-25T12:22:46Z" finished-at="2021-05-25T12:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test7()[pri:0, instance:grid.GridDemo@258e2e41]" name="test7" duration-ms="58523" started-at="2021-05-25T12:22:49Z" finished-at="2021-05-25T12:23:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+      </class> <!-- grid.GridDemo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
