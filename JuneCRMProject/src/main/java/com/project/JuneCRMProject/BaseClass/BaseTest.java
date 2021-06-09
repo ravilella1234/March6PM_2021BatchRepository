@@ -5,6 +5,8 @@ import java.util.Properties;
 
 import org.testng.annotations.BeforeTest;
 
+import com.project.JuneCRMProject.utils.ExcelAPI;
+
 public class BaseTest 
 {
 	public String projectPath = System.getProperty("user.dir");
@@ -12,6 +14,9 @@ public class BaseTest
 	public Properties p;
 	public Properties mainProp;
 	public Properties childProp;
+	public ExcelAPI xls;
+	public String suiteName;
+	public String testName;
 	
 	@BeforeTest
 	public void beforeTest() throws Exception 
@@ -38,6 +43,23 @@ public class BaseTest
 		childProp = new Properties();
 		childProp.load(fis);
 		System.out.println(childProp.getProperty("zohourl"));
+		
+		
+
+		//init the testName
+		testName = this.getClass().getSimpleName();
+		System.out.println(testName);
+		
+		//init the xls file
+		//How do i come to know the suite?
+		String[] pack = this.getClass().getPackage().getName().split("\\.");
+		suiteName = pack[pack.length-1];
+		System.out.println(suiteName);
+		
+		System.out.println(childProp.getProperty(suiteName+"_xls"));
+		xls = new ExcelAPI(childProp.getProperty(suiteName+"_xls"));
+		
+		
 		
 	}
 

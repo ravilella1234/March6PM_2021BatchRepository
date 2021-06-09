@@ -4,15 +4,12 @@ import org.testng.annotations.Test;
 
 import com.project.JuneCRMProject.BaseClass.BaseTest;
 
-public class LoginTest extends BaseTest
+public class TestA extends BaseTest
 {
-  
+	
   @Test
   public void f() 
   {
-	  System.out.println("iam f Testfrom LoginTest...");
+	  System.out.println("iam f Test from TestA");
   }
-
-  
-
 }
