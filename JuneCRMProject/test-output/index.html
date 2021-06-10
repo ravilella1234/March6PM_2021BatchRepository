@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-skipped">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse-2071580620\testng-customsuite.xml</span>
+                    <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse-428100845\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.project.JuneCRMProject.suitea.LoginTest" hash-for-method="f({Password=zoho2021, Runmode=Y, ExpectedResults=loginSuccess, UserName=ravilella.2015@gmail.com, Brow...)">f({Password=zoho2021, Runmode=Y, ExpectedResults=loginSuccess, UserName=ravilella.2015@gmail.com, Brow...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -104,7 +118,7 @@
                     <div class="method-list-content skipped suite-Default_suite">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.project.JuneCRMProject.suiteb.NewTest" hash-for-method="f">f</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.project.JuneCRMProject.suitea.LoginTest" hash-for-method="f({Password=password1, Runmode=N, ExpectedResults=loginSuccess, UserName=User1, Browser=firefox})">f({Password=password1, Runmode=N, ExpectedResults=loginSuccess, UserName=User1, Browser=firefox})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -119,36 +133,86 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.project.JuneCRMProject.suiteb.NewTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.project.JuneCRMProject.suitea.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="f">
-                  </a> <!-- f -->
+                  <a name="f({Password=zoho2021, Runmode=Y, ExpectedResults=loginSuccess, UserName=ravilella.2015@gmail.com, Brow...)">
+                  </a> <!-- f({Password=zoho2021, Runmode=Y, ExpectedResults=loginSuccess, UserName=ravilella.2015@gmail.com, Brow...) -->
                   <span class="method-name">f</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: D:\AprilWorkSpace\JuneCRMProject\src\test\resources\suiteb.xlsx (The system cannot find the file specified)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(Unknown Source)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at java.io.FileInputStream.&lt;init&gt;(Unknown Source)
-	at com.project.JuneCRMProject.utils.ExcelAPI.&lt;init&gt;(ExcelAPI.java:33)
-	at com.project.JuneCRMProject.BaseClass.BaseTest.init(BaseTest.java:60)
-	at com.project.JuneCRMProject.BaseClass.BaseTest.beforeTest(BaseTest.java:25)
+                  <span class="parameters">({Password=zoho2021, Runmode=Y, ExpectedResults=loginSuccess, UserName=ravilella.2015@gmail.com, Browser=chrome})</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at java.util.Hashtable.get(Unknown Source)
+	at java.util.Properties.getProperty(Unknown Source)
+	at com.project.JuneCRMProject.DriverClass.DriverScript.executeKeywords(DriverScript.java:42)
+	at com.project.JuneCRMProject.suitea.LoginTest.f(LoginTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
-	at org.testng.TestRunner.run(TestRunner.java:581)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.project.JuneCRMProject.suitea.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="f({Password=password1, Runmode=N, ExpectedResults=loginSuccess, UserName=User1, Browser=firefox})">
+                  </a> <!-- f({Password=password1, Runmode=N, ExpectedResults=loginSuccess, UserName=User1, Browser=firefox}) -->
+                  <span class="method-name">f</span>
+                  <span class="parameters">({Password=password1, Runmode=N, ExpectedResults=loginSuccess, UserName=User1, Browser=firefox})</span>
+                  <div class="stack-trace">org.testng.SkipException: Testcase Set Runmode as NO....
+	at com.project.JuneCRMProject.suitea.LoginTest.f(LoginTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
@@ -171,7 +235,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse-2071580620\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse-428100845\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -180,7 +244,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.project.JuneCRMProject.suiteb.NewTest&quot;/&gt;
+      &lt;class name=&quot;com.project.JuneCRMProject.suitea.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -220,16 +284,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'f')
-data.setCell(0, 2, 'com.project.JuneCRMProject.suiteb.NewTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 2, 'com.project.JuneCRMProject.suitea.LoginTest')
+data.setCell(0, 3, 17);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'f')
+data.setCell(1, 2, 'com.project.JuneCRMProject.suitea.LoginTest')
+data.setCell(1, 3, 9);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 26 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -255,16 +323,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.project.JuneCRMProject.suiteb.NewTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.project.JuneCRMProject.suitea.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">f</span>
-                <span class="method-start">217 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">f({Password=zoho2021, Runmode=Y, ExpectedResults=loginSuccess, UserName=ravilella.2015@gmail.com, Brow...)</span>
+                <span class="method-start">1824 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">f({Password=password1, Runmode=N, ExpectedResults=loginSuccess, UserName=User1, Browser=firefox})</span>
+                <span class="method-start">1867 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
