@@ -6,7 +6,7 @@
       <class name="com.project.JuneCRMProject.suitea.LoginTest">
         <methods>
           <include name="beforeTest"/>
-          <include name="f" invocation-numbers="0 1"/>
+          <include name="f" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.project.JuneCRMProject.suitea.LoginTest -->
     </classes>
