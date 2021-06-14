@@ -2,16 +2,16 @@
 <testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1790" started-at="2021-06-11T18:13:43 IST" finished-at="2021-06-11T18:13:45 IST">
+  <suite name="Default suite" duration-ms="46144" started-at="2021-06-14T18:15:51 IST" finished-at="2021-06-14T18:16:37 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1790" started-at="2021-06-11T18:13:43 IST" finished-at="2021-06-11T18:13:45 IST">
+    <test name="Default test" duration-ms="46144" started-at="2021-06-14T18:15:51 IST" finished-at="2021-06-14T18:16:37 IST">
       <class name="com.project.JuneCRMProject.suitea.LoginTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.project.JuneCRMProject.suitea.LoginTest@396f6598]" name="beforeTest" is-config="true" duration-ms="1603" started-at="2021-06-11T18:13:43 IST" finished-at="2021-06-11T18:13:45 IST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.project.JuneCRMProject.suitea.LoginTest@396f6598]" name="beforeTest" is-config="true" duration-ms="1583" started-at="2021-06-14T18:15:51 IST" finished-at="2021-06-14T18:15:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.JuneCRMProject.suitea.LoginTest@396f6598]" name="f" duration-ms="34" started-at="2021-06-11T18:13:45 IST" data-provider="getData" finished-at="2021-06-11T18:13:45 IST">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.JuneCRMProject.suitea.LoginTest@396f6598]" name="f" duration-ms="44411" started-at="2021-06-14T18:15:53 IST" data-provider="getData" finished-at="2021-06-14T18:16:37 IST">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.JuneCRMProject.suitea.LoginTest@396f6598]" name="f" duration-ms="16" started-at="2021-06-11T18:13:45 IST" data-provider="getData" finished-at="2021-06-11T18:13:45 IST">
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.JuneCRMProject.suitea.LoginTest@396f6598]" name="f" duration-ms="7" started-at="2021-06-14T18:16:37 IST" data-provider="getData" finished-at="2021-06-14T18:16:37 IST">
           <params>
             <param index="0">
               <value>

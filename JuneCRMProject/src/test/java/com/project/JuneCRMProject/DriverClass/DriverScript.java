@@ -1,5 +1,6 @@
 package com.project.JuneCRMProject.DriverClass;
 
+import java.lang.reflect.Method;
 import java.util.Hashtable;
 import java.util.Properties;
 
@@ -52,16 +53,27 @@ public class DriverScript
 				
 				//System.out.println(tcid + "----" +keyword + "----" + objectValue + "----" + dataValue);
 				
-				if(keyword.equals("openBrowser"))
-					app.openBrowser();
-				else if(keyword.equals("navigateUrl"))
-					app.navigateUrl();
-				else if(keyword.equals("clickElement"))
-					app.clickElement();
-				else if(keyword.equals("typeText"))
-					app.typeText();
-				else if(keyword.equals("ValidateLoginPage"))
-					app.ValidateLoginPage();
+				/*
+				 * if(keyword.equals("openBrowser")) app.openBrowser(); else
+				 * if(keyword.equals("navigateUrl")) app.navigateUrl(); else
+				 * if(keyword.equals("clickElement")) app.clickElement(); else
+				 * if(keyword.equals("typeText")) app.typeText(); else
+				 * if(keyword.equals("ValidateLoginPage")) app.ValidateLoginPage(); else
+				 * if(keyword.equals("verifyTitle")) app.verifyTitle();
+				 */
+				
+				//Reflection API
+				Method method;
+				try 
+				{
+					method = app.getClass().getMethod(keyword);
+					method.invoke(app);
+				} 
+				catch (Exception e) 
+				{
+					e.printStackTrace();
+				} 
+				
 			}
 			
 		}
