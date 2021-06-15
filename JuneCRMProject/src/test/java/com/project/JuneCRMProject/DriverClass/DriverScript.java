@@ -5,6 +5,7 @@ import java.util.Hashtable;
 import java.util.Properties;
 
 import com.project.JuneCRMProject.keywords.AppKeywords;
+import com.project.JuneCRMProject.utils.Constants;
 import com.project.JuneCRMProject.utils.ExcelAPI;
 
 public class DriverScript 
@@ -24,6 +25,13 @@ public class DriverScript
 	public Properties getChildProp() {
 		return childProp;
 	}
+	
+	public void quit()
+	{
+		if(app!=null)
+			app.quit();
+	}
+	
 
 	public void executeKeywords(ExcelAPI xls, String testName,Hashtable<String, String> testData)
 	{
@@ -34,15 +42,15 @@ public class DriverScript
 		
 		for(int rNum=1;rNum<rows;rNum++)
 		{
-			String tcid = xls.getCellData("Keywords", "TCID", rNum);
+			String tcid = xls.getCellData(Constants.KEYWORDS_SHEET, Constants.TCID_COL, rNum);
 			if(tcid.equals(testName))
 			{
-				String keyword = xls.getCellData("Keywords", "Keyword", rNum);
+				String keyword = xls.getCellData(Constants.KEYWORDS_SHEET, Constants.KEYWORD_COL, rNum);
 				
-				String objectKey = xls.getCellData("Keywords", "Object", rNum);
+				String objectKey = xls.getCellData(Constants.KEYWORDS_SHEET, Constants.OBJECT_COL, rNum);
 				String objectValue = orProp.getProperty(objectKey);
 				
-				String dataKey = xls.getCellData("Keywords", "Data", rNum);
+				String dataKey = xls.getCellData(Constants.KEYWORDS_SHEET, Constants.DATA_COL, rNum);
 				String dataValue = testData.get(dataKey);			
 				
 				app.setObjectKey(objectKey);

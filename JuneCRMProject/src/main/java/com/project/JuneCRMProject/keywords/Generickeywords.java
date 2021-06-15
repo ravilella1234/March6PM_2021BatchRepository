@@ -112,6 +112,10 @@ public class Generickeywords
 		return element;
 	}
 	
-	
+	public void quit()
+	{
+		if(driver!=null)
+			driver.quit();
+	}
 
 }

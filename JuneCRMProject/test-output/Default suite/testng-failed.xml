@@ -5,6 +5,7 @@
     <classes>
       <class name="com.project.JuneCRMProject.suitea.LoginTest">
         <methods>
+          <include name="quit"/>
           <include name="beforeTest"/>
           <include name="f" invocation-numbers="1"/>
         </methods>

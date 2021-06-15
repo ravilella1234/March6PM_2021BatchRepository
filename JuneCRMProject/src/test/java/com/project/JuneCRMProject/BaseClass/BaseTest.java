@@ -3,6 +3,7 @@ package com.project.JuneCRMProject.BaseClass;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.project.JuneCRMProject.DriverClass.DriverScript;
@@ -26,6 +27,13 @@ public class BaseTest
 	{
 		System.out.println("iam beforeTest....");  
 		init();
+	}
+	
+	@AfterTest
+	public void quit()
+	{
+		if(ds!=null)
+			ds.quit();
 	}
 
 	public  void init() throws Exception 
